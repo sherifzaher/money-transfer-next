@@ -5,6 +5,11 @@ export type RegisterFormFields = {
   password: string;
 }
 
+export type LoginFormFields = {
+  username: string;
+  password: string;
+}
+
 export type ReactHookFormOption = {
   value: number;
   message: string;

@@ -1,16 +1,4 @@
-.form {
-  width: 800px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.nameContainer {
-  display: flex;
-  gap: 4px;
-}
-
-.button {
+.defaultButton {
   background-color: #272727;
   font-size: 0.9rem;
   padding: 20px 0;

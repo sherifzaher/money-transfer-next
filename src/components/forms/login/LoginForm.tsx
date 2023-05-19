@@ -3,17 +3,17 @@ import {useForm, SubmitHandler, FieldValues} from "react-hook-form";
 
 import {InputField} from "../../inputs/InputField";
 import { Button } from '../../buttons/Button';
-import {RegisterFormFields} from "../../../types/form-fields";
+import { LoginFormFields } from "../../../types/form-fields";
 import formStyles from '../../../styles/forms.module.scss';
 import buttonStyles from '../../../styles/button.module.scss';
 
-export const RegisterForm: NextPage = () => {
+export const LoginForm: NextPage = () => {
   const {
     register,
     formState: { errors },
     handleSubmit
   } = useForm<FieldValues>({
-    defaultValues: {} as RegisterFormFields,
+    defaultValues: {} as LoginFormFields,
   });
 
   console.log(errors);
@@ -25,40 +25,6 @@ export const RegisterForm: NextPage = () => {
   return (
     <form className={formStyles.registerFormLogin} onSubmit={handleSubmit(onSubmit)}>
       <div className={formStyles.formNameContainer}>
-        <InputField
-          id={"firstName"}
-          label={"First name"}
-          required
-          register={register}
-          errors={errors}
-          option={{
-            maxLength: {
-              value: 32,
-              message: '32 Characters Max'
-            },
-            minLength: {
-              value: 2,
-              message: '2 Characters Min',
-            }
-          }}
-        />
-        <InputField
-          id={"lastName"}
-          label={"Last name"}
-          required
-          register={register}
-          errors={errors}
-          option={{
-            maxLength:{
-              value: 32,
-              message: '32 Characters Max'
-            },
-            minLength: {
-              value: 2,
-              message: '2 Characters Min',
-            }
-          }}
-        />
       </div>
       <InputField
         id={"username"}
@@ -95,7 +61,7 @@ export const RegisterForm: NextPage = () => {
           }
         }}
       />
-      <Button className={buttonStyles.defaultButton}>Create Account</Button>
+      <Button className={buttonStyles.defaultButton}>Login</Button>
     </form>
   )
 }
