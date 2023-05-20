@@ -1,7 +1,7 @@
 import {NextPage} from "next";
 import {UseFormRegister, FieldErrors, FieldValues} from 'react-hook-form';
 import styles from './index.module.scss'
-import {ReactHookForm, RegisterFormFields} from "../../types/form-fields";
+import { ReactHookForm } from "../../types/form-fields";
 
 type Props = {
   label: string;

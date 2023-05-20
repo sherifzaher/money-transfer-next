@@ -68,8 +68,8 @@ export const RegisterForm: NextPage = () => {
         errors={errors}
         option={{
           maxLength:{
-            value: 32,
-            message: '32 Characters Max'
+            value: 16,
+            message: '16 Characters Max'
           },
           minLength: {
             value: 3,
