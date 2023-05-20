@@ -16,3 +16,9 @@ export type NavigationItem = {
   type: NavigationItemType;
   pathname: string;
 }
+
+export type MockPaymentMethodType = {
+  type: string;
+  last4: string,
+  name: string;
+}

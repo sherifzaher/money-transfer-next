@@ -3,6 +3,11 @@
   background-color: #1a1a1a;
   padding: 16px;
   border-radius: 4px;
+  transition: 300ms border ease;
+  border: 1px solid transparent;
+  &:focus-within {
+    border: 1px solid #c4c4c4;
+  }
 }
 
 .inputContainerHeader {
