@@ -1,0 +1,11 @@
+.icon {
+  cursor: pointer;
+  transition: 200ms color ease;
+  &:hover {
+    color: rgb(79,79,79);
+  }
+}
+
+.active {
+  color: #878787;
+}
