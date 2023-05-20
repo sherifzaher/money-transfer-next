@@ -1,7 +1,8 @@
+import styles from './index.module.scss';
 function NavigationSidebar(){
     return (
-        <div>
-            NavigationSidebar
+        <div className={styles.nav}>
+            nav sidebar
         </div>
     )
 }

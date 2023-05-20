@@ -2,7 +2,7 @@ import {LoginForm} from "../../components/forms/login/LoginForm";
 
 function index(){
     return (
-        <div className={"page"}>
+        <div className={"pageFlex"}>
             <LoginForm />
         </div>
     )

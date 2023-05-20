@@ -4,7 +4,7 @@ import DashboardLayout from "../../layouts/DashboardLayout";
 
 const Dashboard: NextPageWithLayout = () => {
     return (
-        <div>
+        <div className={"page"}>
             Dashboard
         </div>
     )
