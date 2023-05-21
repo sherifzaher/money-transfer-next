@@ -1,6 +1,8 @@
 .container {
-  display: flex;
   width: 100%;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 450px 450px 450px;
 }
 
 .addPaymentCard {
@@ -18,5 +20,62 @@
   transition: 300ms opacity ease;
   &:hover {
     opacity: 1;
+  }
+}
+
+.paymentCard {
+  width: 450px;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  height: 190px;
+  justify-content: space-between;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 5px rgba(0,0,0,0.26);
+
+  & .content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px;
+  }
+
+  & .cardTitle {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  & .last4 {
+    text-align: right;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  & .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 48px;
+    background-color: #1b1b1b;
+    height: 140px;
+    font-size: 18px;
+    border-top: 1px solid rgba(43,43,43,0.543);
+  }
+}
+
+.paymentMethodHeader {
+  width: 100%;
+  background-color: #171717;
+  border-radius: 10px;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & span {
+    font-size: 24px;
+    font-weight: 500;
   }
 }
